@@ -186,9 +186,12 @@ background-color:var(--color-blue);
     
     }
     .benefits-element {
-      margin-left: 30px; 
-      width: 270px; 
+           width: 270px; 
     }
+    .benefits-element:not(:first-child)
+    {
+    margin-left: 30px; 
+}
     .benefits-element:last-child {
         margin-bottom: 0;
     }
@@ -334,8 +337,8 @@ line-height: 1.88;
  .footer {
  background-color:var(--color-darkblue); 
  
- padding-top: 54px;
- padding-bottom: 66px; 
+ padding-top: 60px;
+ padding-bottom: 60px; 
 
 }
 
@@ -355,7 +358,7 @@ line-height: 1.88;
  .address .list {
     display: inline-block;
     }
-    .address .item {
+    .address .item:not(:last-child) {
         margin-bottom: 9px;
     }
 .list{
